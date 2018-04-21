@@ -2,10 +2,9 @@
 Here we'll be studying x86 and x86-64 architecture registers, following mainly Intel Pattern.  
 In order to store data in general, the main "thing" we use are registers.  
 ## Registers
-
 At x86 architecture there are eight 32-bit general purpose registers (GPRs), some of them can also be divided into 8 and 16-bit registers.
-### General Purpose Registers
 
+### General Purpose Registers
 | Register | Purpose |16 - Bits | 8 Bits |  
 | ------------- | :------: |:-----:| :-----:  
 | EAX |-| AX |AH-AL|  
@@ -14,7 +13,6 @@ At x86 architecture there are eight 32-bit general purpose registers (GPRs), som
 | ECX | Usually counter in loops | - |
 
 ### Address Registers
- 4 de endereço (SP, BP, SI, DI)
 | Register | Purpose |16 - Bits |
 | ------------- |:--------| :-----:|
 | ESI | Source in string/memory operations | SI   
