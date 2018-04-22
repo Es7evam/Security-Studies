@@ -31,7 +31,7 @@ def usage:
     print "Examples: "
     print "bhpnet.py -t 192.168.0.1 -p 5555 -l -c"
     print "bhpnet.py -t 192.168.0.1 -p 5555 -l -u=c://target.exe
-    print "bhpnet.py -t 192.168.0.1 -p 5555 -l -e=\"cat /etc/passwd\""
+    print "bhpnet.py -t 192.168.0.1 -p 5555 -l -e=\"cat /etc/passwd\" "
     print "echo 'ABCDEFGHI' | ./bhpnet.py -t 192.168.11.12 -p 135"
     sys.exit(0)
 
@@ -48,7 +48,7 @@ def main():
 
     #read the commandline options
     try:
-        opts, args = getopt.getopt(sys.argv[1:],"hle:t:p:cu", \
+        opts, args = getopt.getopt(sys.argv[1:],"hle:t:p:c:u", \
         ["help","listen","execute","target","port","command","upload"])
     except getopt.GetoptError as err:
         print str(err)
