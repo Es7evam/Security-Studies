@@ -10,15 +10,15 @@ At x86 architecture there are eight 32-bit general purpose registers (GPRs), som
 | EAX |-| AX |AH-AL|  
 | EBX |-| - | - |  
 | EDX |-| - | - |  
-| ECX | Usually counter in loops | - |
+| ECX | Usually counter in loops | - | - |
 
 ### Address Registers
 | Register | Purpose |16 - Bits |
 | ------------- |:--------| :-----:|
 | ESI | Source in string/memory operations | SI   
-| EDI | Destination in string/memory operations | DI | - |  - |
+| EDI | Destination in string/memory operations | DI |
 | EBP | Base Frame Pointer | BP |
-| ESP | Stack Pointer | SP |
+| ESP | Stack Pointer | SP | |
 
 ### Another registers
 | Register | Purpose |16 - Bits |
