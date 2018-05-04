@@ -5,7 +5,7 @@ It is, as the name says, a debugger, and can be used in reverse engineering in o
 ## Running and Disassembling
 In order to run it, you must execute:
 ```
-gdb programname
+gdb programName
 ```
 
 So, the default syntax of gdb is AT&T. Since here we mainly use Intel syntax we may change it using
@@ -22,14 +22,18 @@ disassemble main
 It is important to notice that the program will be as it shows in memory, but you can use another software in order to visualize better the control flow of it.
 
 ## GDB Commands
-
+If only `Enter` is pressed the last it is equivalent to typing and running the last command again.
 ### Control Flow
-- `break *function` <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sets a breakpoint at the given function.
+- `run arg1, arg2...` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Runs the program and, if provided, with the arguments arg1, arg2, ...
+- `break *address` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sets a breakpoint at the given address. Can be used with function name insted of address.
 - `si` <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Step one instruction
 - `ni` <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Like
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Like si, but not showing execution of function calls (skipping them).
+- `set $eax=x` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sets register (eax for example) with value given 'x'
 
 ### Registers
 
