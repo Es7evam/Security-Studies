@@ -49,6 +49,14 @@ In order to sum or subtract address inside [] usually is used hexadecimal, for e
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sets ecx = [eax]  
 - ADD - inc dword ptr [eax]  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Increments value at address eax.  
+- CMP - cmp eax, ebx <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(eax == ebx) Sets eflags;
+- JNE - jne 0x400086 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jumps to given address if eflags was set to equal.
+- CALL - call 0x400086 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jumps to given address and saves current location at stack.
+- RET - ret <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pops the address of the stack and returns control to that location - ("jump").
 
 
 ### ARM  
