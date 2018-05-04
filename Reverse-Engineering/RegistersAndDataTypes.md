@@ -60,12 +60,9 @@ In order to sum or subtract address inside [] usually is used hexadecimal, for e
 
 
 ### ARM  
-- Load Word - LDR R3, [R3]  
+- Load Word - `LDR R3, [R3]` <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Read the value at address R3.  
-- Store Word - STR R2, [R3]  
+- Store Word - `STR R2, [R3]`  <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Store the value from R2 at address R3.  
-- Add to register - ADDS R2, R3, #1  
+- Add to register - `ADDS R2, R3, #1`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add 1 to R3 and store at R2.  
-
-## References  
-- [Practical Reverse Engineering](https://www.amazon.com/Practical-Reverse-Engineering-Reversing-Obfuscation/dp/1118787315) - By [Bruce Dang](https://www.amazon.com/Bruce-Dang/e/B00IHK3NT0)
