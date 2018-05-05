@@ -34,8 +34,15 @@ If only `Enter` is pressed the last it is equivalent to typing and running the l
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Like si, but not showing execution of function calls (skipping them).
 - `set $eax=x` <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sets register (eax for example) with value given 'x'
-- `define hook-NAME` <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Define hook of the determined name
+- `define hook-stop` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Define hook of stops, like the example below:
+```
+define hook-stop
+info registers
+x/24wx $esp
+x/2i $eip
+end
+```
 
 ### Registers
 
@@ -47,3 +54,5 @@ If only `Enter` is pressed the last it is equivalent to typing and running the l
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Prints the stack of the program (24 words)
 - `x/2i $eip` <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Prints the next two instructions.
+- `x function` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Prints address of function
