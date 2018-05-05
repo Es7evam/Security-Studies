@@ -26,6 +26,11 @@ At x86 architecture there are eight 32-bit general purpose registers (GPRs), som
 | EIP | Instruction Pointer (Program counter) | - |
 | EFLAGS | Store operations - Ex: Flag Zero | - |  
 
+### Registers Conventions
+- EBP <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Used to calculate addresses at the program (for example variables)
+
+
 ## Instruction set  
 The x86 instruction set are around the data movement between registers and memory, classified in 5 types:  
 - Immediate to register  
@@ -45,7 +50,7 @@ In order to sum or subtract address inside [] usually is used hexadecimal, for e
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mov eax [ecx+10h] - Where the h is used to indicate hexadecimal notation.  
 
 
-- MOV - mov ecx, [eax]  
+- MOV - mov ecx, [eax]  <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sets ecx = [eax]  
 - ADD - inc dword ptr [eax]  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Increments value at address eax.  
