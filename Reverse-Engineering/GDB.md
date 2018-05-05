@@ -41,6 +41,8 @@ If only `Enter` is pressed the last it is equivalent to typing and running the l
 
 - `info registers` <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shows the value at the registers of the given program at that moment
+- `x/wx $reg` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Prints register "reg"
 - `x/24wx $esp`  <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Prints the stack of the program (24 words)
 - `x/2i $eip` <br>
