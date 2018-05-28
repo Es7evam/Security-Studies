@@ -37,8 +37,12 @@ When running the control flow you will notice that rip (instruction pointer regi
 | `db address` | Sets breakpoint at address| `db 0x004005bd`
 | `dc` | Runs the program | - |
 | `s` | Step to next instruction | - |
-|`S` | Step to next non-library function  |   |
-
+| `S` | Step to next non-library function  | -  |
+| `dr` | Show what is in registers  | -  |
+|`ood`   | Reload file in debug mode  | -  |
+| `dr reg=value` | Sets reg to value | `dr=rip0x0040064b` |
+| `afvn prevName newName` | Renames variable | `afvn local_2_4 sum` |
+| `V!`  | Change to complete info grid  | - |
 ### Visual Mode
 | Command | Action     |
 | :-------------: | :------------- |
