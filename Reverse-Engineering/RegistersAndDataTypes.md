@@ -57,9 +57,9 @@ In order to sum or subtract address inside [] usually is used hexadecimal, for e
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jumps to given address and saves current location at stack.
 - RET - ret <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pops the address of the stack and returns control to that location - ("jump").
-- LEA - lea eax, [esp+0x1c]
+- LEA - lea eax, [esp+0x1c] <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Moves address of register to another (eax = esp+0x1c), used to pass parameters
-- LEAVE - leave
+- LEAVE - leave <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Moves ebp to esp and pops ebp from the stack.
 
 
