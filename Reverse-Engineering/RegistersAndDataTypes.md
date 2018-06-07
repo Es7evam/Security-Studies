@@ -47,12 +47,18 @@ In order to sum or subtract address inside [] usually is used hexadecimal, for e
 
 - MOV - mov ecx, [eax]  <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sets ecx = [eax]  
-- ADD - inc dword ptr [eax]  
+- ADD - inc dword ptr [eax] <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Increments value at address eax.  
+- SUB - sub eax, 0x20 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Subtracts eax by 0x20.
+- PUSH - push eax <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pushes eax at the stack
+
 - CMP - cmp eax, ebx <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(eax == ebx) Sets eflags;
 - JNE - jne 0x400086 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jumps to given address if eflags was set to equal.
+
 - CALL - call 0x400086 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jumps to given address and saves current location at stack.
 - RET - ret <br>
