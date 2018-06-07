@@ -7,10 +7,10 @@ At x86 architecture there are eight 32-bit general purpose registers (GPRs), som
 ### General Purpose Registers
 | Register | Purpose |16 - Bits | 8 Bits |  
 | ------------- | :------: |:-----:| :-----:  
-| EAX |-| AX |AH-AL|  
-| EBX |-| - | - |  
-| EDX |-| - | - |  
-| ECX | Usually counter in loops | - | - |
+| EAX | Acumulator, used for arithmetic operations and to store results| AX |AH-AL|  
+| EBX | Base register for the stack| - | - |  
+| ECX | Counter in loops | - | - |
+| EDX | Used to store addresses of the data| - | - |  
 
 ### Address Registers
 | Register | Purpose |16 - Bits |
@@ -25,11 +25,6 @@ At x86 architecture there are eight 32-bit general purpose registers (GPRs), som
 | ------------- |:--------| :-----:|
 | EIP | Instruction Pointer (Program counter) | - |
 | EFLAGS | Store operations - Ex: Flag Zero | - |  
-
-### Registers Conventions
-- EBP <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Used to calculate addresses at the program (for example variables)
-
 
 ## Instruction set  
 The x86 instruction set are around the data movement between registers and memory, classified in 5 types:  
