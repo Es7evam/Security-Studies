@@ -7,10 +7,10 @@ At x86 architecture there are eight 32-bit general purpose registers (GPRs), som
 ### General Purpose Registers
 | Register | Purpose |16 - Bits | 8 Bits |  
 | ------------- | :------: |:-----:| :-----:  
-| EAX |-| AX |AH-AL|  
-| EBX |-| - | - |  
-| EDX |-| - | - |  
-| ECX | Usually counter in loops | - | - |
+| EAX | Acumulator, used for arithmetic operations and to store results| AX |AH-AL|  
+| EBX | Base register for the stack| - | - |  
+| ECX | Counter in loops | - | - |
+| EDX | Used to store addresses of the data| - | - |  
 
 ### Address Registers
 | Register | Purpose |16 - Bits |
@@ -25,11 +25,6 @@ At x86 architecture there are eight 32-bit general purpose registers (GPRs), som
 | ------------- |:--------| :-----:|
 | EIP | Instruction Pointer (Program counter) | - |
 | EFLAGS | Store operations - Ex: Flag Zero | - |  
-
-### Registers Conventions
-- EBP <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Used to calculate addresses at the program (for example variables)
-
 
 ## Instruction set  
 The x86 instruction set are around the data movement between registers and memory, classified in 5 types:  
@@ -52,19 +47,25 @@ In order to sum or subtract address inside [] usually is used hexadecimal, for e
 
 - MOV - mov ecx, [eax]  <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sets ecx = [eax]  
-- ADD - inc dword ptr [eax]  
+- ADD - inc dword ptr [eax] <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Increments value at address eax.  
+- SUB - sub eax, 0x20 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Subtracts eax by 0x20.
+- PUSH - push eax <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pushes eax at the stack
+
 - CMP - cmp eax, ebx <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(eax == ebx) Sets eflags;
 - JNE - jne 0x400086 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jumps to given address if eflags was set to equal.
+
 - CALL - call 0x400086 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jumps to given address and saves current location at stack.
 - RET - ret <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pops the address of the stack and returns control to that location - ("jump").
-- LEA - lea eax, [esp+0x1c]
+- LEA - lea eax, [esp+0x1c] <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Moves address of register to another (eax = esp+0x1c), used to pass parameters
-- LEAVE - leave
+- LEAVE - leave <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Moves ebp to esp and pops ebp from the stack.
 
 
