@@ -10,12 +10,13 @@ In the future I plan to write a guide on what you should usually do in each situ
 1. [Enumerating](#enumerating)
 2. [Payloads and Reverse Shells](#payloads)
 3. [Scripts](#scripts)
-4. [Cheat heets](#cheatsheets)
+4. [Cheat Sheets](#cheatsheets)
 
 ### Initial Enumerating <a name="enumerating"></a>
 
  - [nmap](https://nmap.org/) - Nmap is an utility for network discovery and security auditing
  - [dirb](http://dirb.sourceforge.net/),  [dirsearch](https://github.com/maurosoria/dirsearch) and [Gobuster](https://github.com/OJ/gobuster) are file and directories bruteforcers. Gobuster also scans for DNS subdomains.
+ - [WPScan](https://wpscan.org/) - A black box WordPress vulnerability scanner.
 
 ### Payloads and Reverse Shells <a name="payloads"></a>
  - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) - A list of useful payloads and bypass for Web Application Security and Pentest/CTF.
