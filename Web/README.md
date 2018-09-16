@@ -28,3 +28,4 @@ In the future I plan to write a guide on what you should usually do in each situ
 
 ### Cheat Sheets <a name="cheatsheets"></a>
  - [Local Linux Enumeration & Privilege Escalation](https://www.rebootuser.com/?p=1623)
+ - [Pentest Monkey Reverse Shell Cheat Sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
