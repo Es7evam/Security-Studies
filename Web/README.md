@@ -29,3 +29,4 @@ In the future I plan to write a guide on what you should usually do in each situ
 ### Cheat Sheets <a name="cheatsheets"></a>
  - [Local Linux Enumeration & Privilege Escalation](https://www.rebootuser.com/?p=1623)
  - [Pentest Monkey Reverse Shell Cheat Sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
+ - [SQL Injection Cheat Sheet - Netsparker](https://the-eye.eu/public/Books/qt.vidyagam.es/library/SQL/SQL%20Injection%20Cheat%20Sheet/SQL%20Injection%20Cheat%20Sheet%20-%20Netsparker.pdf)
