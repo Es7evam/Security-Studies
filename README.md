@@ -3,7 +3,11 @@
 This is the repository where I'll try to keep some of my InfoSec study material.
 They'll be separated in folders, each one representing some category and, inside that, several [Markdown](https://en.wikipedia.org/wiki/Markdown) files where the notes will be kept, together with a README.md file, indicating the order I recommend you to read it.
 
-
+## Table of Contents
+1. [Exploitation](/Security-Studies/Exploitation/)
+2. [Python](/Security-Studies/Python/)
+3. [Reverse-Engineering](/Security-Studies/Reverse-Engineering/)
+4. [Web](/Security-Studies/Web/)
 
 ## Author
 
