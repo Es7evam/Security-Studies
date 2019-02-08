@@ -8,10 +8,10 @@ This is the repository where I'll try to keep some of my InfoSec study material.
 
 ## Table of Contents
 
-1. [Exploitation](https://github.com/Es7evam/Security-Studies/tree/c2582d3cae736dd0a22e16cdc167c8db55dc1352/Exploitation/README.md)
-2. [Python](https://github.com/Es7evam/Security-Studies/tree/c2582d3cae736dd0a22e16cdc167c8db55dc1352/Python/README.md)
-3. [Reverse-Engineering](https://github.com/Es7evam/Security-Studies/tree/c2582d3cae736dd0a22e16cdc167c8db55dc1352/Reverse-Engineering/README.md)
-4. [Web](https://github.com/Es7evam/Security-Studies/tree/c2582d3cae736dd0a22e16cdc167c8db55dc1352/Web/README.md)
+1. [Exploitation](exploitation/)
+2. [Python](python.md)
+3. [Reverse-Engineering](reverse-engineering/)
+4. [Web](web.md)
 
 ## Author
 
