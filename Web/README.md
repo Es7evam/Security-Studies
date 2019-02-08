@@ -1,4 +1,4 @@
-# Web Security
+# Web
 
 Web is usually the entry point at security in general. <br>
 
