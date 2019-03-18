@@ -15,6 +15,7 @@
 * [Reverse Engineering](reverse-engineering/README.md)
   * [Registers and Data Types](reverse-engineering/registersanddatatypes.md)
   * [x86 Hello World](reverse-engineering/x86-hello-world.md)
+  * [Binary Protections](reverse-engineering/binary-protections.md)
   * [GDB](reverse-engineering/gdb.md)
   * [Radare 2](reverse-engineering/radare2.md)
 * [Web](web.md)
